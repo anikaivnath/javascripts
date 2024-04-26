@@ -1,0 +1,17 @@
+.time
+{
+    text-align: center;
+}
+#real
+{
+    text-align: center;
+}
+button
+{
+    border-radius: 5px;
+    padding: 5px;
+}
+button :hover
+{
+   cursor: pointer;
+}
