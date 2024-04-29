@@ -1,19 +1,23 @@
-let Time=()=>{
-    let time=document.getElementById('real');
-    time.innerText=` (${new Date().toLocaleTimeString()})`;
+let Abc =document.getElementById('Itm');
+let btn=document.getElementById('btn');
+let store=document.getElementById('store');
 
-}
-setInterval(Time,1000)
-let arr=[];
-let btn =document.getElementById('btn');
-btn.addEventListener('click',()=> {
+btn.addEventListener('click',()=>
+{
+  let guess=(Abc.value);
+  if(isNaN(guess)|| guess<1 || guess>100)
+  {
+    store.innerText="input 1 to 100";
+ 
+  }
+  let random= Math.floor(Math.random() * 100)+1;
+  if(guess>random)
+  {
+    store.innerHTML= 'very high';
+  }
+  else{
+    store.innerHTML='very low'
+  }
 
-    let p= document.createElement('p');
-    p.innerText=`(${new Date().toLocaleTimeString()}) {1st One}`;
-    document.body.appendChild(p);
-})
-   
 
-    
-
-
+});

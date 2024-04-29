@@ -1,17 +1,14 @@
-.time
+.new
 {
     text-align: center;
+    justify-content: center;
 }
-#real
-{
-    text-align: center;
+input{
+    padding: 5px;
+    border-radius: 5px;
 }
 button
 {
-    border-radius: 5px;
     padding: 5px;
-}
-button :hover
-{
-   cursor: pointer;
+    border-radius: 5px;
 }
